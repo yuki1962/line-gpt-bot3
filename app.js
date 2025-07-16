@@ -14,23 +14,27 @@ app.post("/webhook", async (req, res) => {
       const userText = event.message.text;
 
       // Groq API にリクエスト
-      const groqResp = await axios.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        {
-          model: "llama3-8b-8192",
-          messages: [
-            { role: "system", content: "You are a helpful assistant." },
-            { role: "user", content: userText },
-          ],
-          temperature: 0.7,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${GROQ_API_KEY}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+    const groqResp = await axios.post(
+  "https://api.groq.com/openai/v1/chat/completions",
+  {
+    model: "llama3-8b-8192",
+    messages: [
+      {
+        role: "system",
+        content: "あなたは親切なAIアシスタントです。ユーザーには日本語で回答してください。",
+      },
+      { role: "user", content: userText },
+    ],
+    temperature: 0.7,
+  },
+  {
+    headers: {
+      Authorization: `Bearer ${GROQ_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+  }
+);
+
 
       const replyText = groqResp.data.choices?.[0]?.message?.content ?? "返答がありません";
 
