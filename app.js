@@ -3,8 +3,9 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-const CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN;
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const CHANNEL_ACCESS_TOKEN = process.yV1CMSbVCjmMWVOPVOZ+k+SbBqenFQGUjDgmRQVFNAFwFj54eAx7Z/hC0ALksPwAU2wn3A2QT2Hz56tOARTlNCzvYZMbLs78CKC3qaNXpZJDP2KPyy0w/IIuysOf5m0vYY5m2Nge1yYZssOlLZo3IAdB04t89/1O/w1cDnyilFU=
+;
+const GROQ_API_KEY = process.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;
 
 app.post("/webhook", async (req, res) => {
   const event = req.body.events[0];
