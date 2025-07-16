@@ -4,9 +4,8 @@ const app = express();
 app.use(express.json());
 
 // 環境変数からキーを取得
-const CHANNEL_ACCESS_TOKEN = process.8dNa3mH0AH6kpD+s65abQ+W9hQYO0yG63oTqml6abKvxNDEyTea0/a1DW36udgbfU2wn3A2QT2Hz56tOARTlNCzvYZMbLs78CKC3qaNXpZLvvfJpgnPeNC6tKPsJ2Oe3KT0np/zz2FzqiBiejaCprgdB04t89/1O/w1cDnyilFU=;
-const GROQ_API_KEY = process.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
-;
+const CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN;
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 
 app.post("/webhook", async (req, res) => {
   const event = req.body.events?.[0];
