@@ -1,19 +1,30 @@
 {
   "name": "line-groq-google-bot",
   "version": "1.0.0",
-  "description": "LINE bot with Groq AI and Google Search integration",
+  "description": "A LINE bot that integrates Groq AI and Google Search",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
-    "express": "^4.18.2"
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   },
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "9.x"
   },
-  "keywords": ["LINE", "Groq", "Google Search", "bot"],
-  "author": "あなたの名前",
+  "keywords": [
+    "LINE",
+    "Groq",
+    "Google",
+    "bot",
+    "Render"
+  ],
+  "author": "Your Name",
   "license": "MIT"
 }
