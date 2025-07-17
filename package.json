@@ -1,16 +1,19 @@
 {
-  "name": "line-gpt-bot3",
+  "name": "line-groq-google-bot",
   "version": "1.0.0",
-  "description": "A LINE Bot powered by Groq",
+  "description": "LINE bot with Groq AI and Google Search integration",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "dependencies": {
-    "express": "^4.18.2",
-    "axios": "^1.6.7"
-  }
+    "axios": "^1.6.8",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["LINE", "Groq", "Google Search", "bot"],
+  "author": "あなたの名前",
+  "license": "MIT"
 }
