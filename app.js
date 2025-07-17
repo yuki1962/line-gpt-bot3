@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 
 // Renderの環境変数から取得
-const CHANNEL_ACCESS_TOKEN = process.env.CHANNEL_ACCESS_TOKEN;
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
+const CHANNEL_ACCESS_TOKEN = "8dNa3mH0AH6kpD+s65abQ+W9hQYO0yG63oTqml6abKvxNDEyTea0/a1DW36udgbfU2wn3A2QT2Hz56tOARTlNCzvYZMbLs78CKC3qaNXpZLvvfJpgnPeNC6tKPsJ2Oe3KT0np/zz2FzqiBiejaCprgdB04t89/1O/w1cDnyilFU=";
+const GROQ_API_KEY = "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";
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const GOOGLE_CX = process.env.GOOGLE_CX;
 
